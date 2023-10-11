@@ -1,0 +1,18 @@
+controller.anyButton.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.sayText("Hi I am Sarah. ")
+    pause(500)
+    mySprite.sayText("I am in the 10 grade")
+    pause(500)
+    mySprite.sayText("I love reading  ")
+    pause(500)
+    mySprite.sayText("I have 5cats 1dog")
+    pause(500)
+    mySprite.sayText("I love black butler")
+    pause(500)
+    mySprite.sayText("goodbye")
+})
+let mySprite: Sprite = null
+scene.setBackgroundImage(assets.image`idk`)
+mySprite = sprites.create(assets.image`love`, SpriteKind.Player)
+mySprite.changeScale(5, ScaleAnchor.Middle)
+controller.moveSprite(mySprite, 50, 50)
